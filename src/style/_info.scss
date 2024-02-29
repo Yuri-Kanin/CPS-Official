@@ -1,0 +1,69 @@
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.info__section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.info__paragraph {
+  margin: 0 0 16px 0;
+}
+.info__text {
+  color: #1b1c21;
+  font-family: "TT Lakes Medium";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: 0.2px;
+  margin-bottom: 16px;
+}
+
+.info__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .info__text2 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .info {
+    flex-wrap: nowrap;
+    margin-bottom: 32px;
+  }
+  .info__section {
+    margin-right: 48px;
+  }
+
+  .info__image {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1120px) {
+  .info {
+    flex-wrap: nowrap;
+    margin-bottom: 51px;
+    justify-content: space-between;
+  }
+
+  .info__section {
+    width: 50%;
+    margin-right: 36px;
+  }
+
+  .info__image {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+}

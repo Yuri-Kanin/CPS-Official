@@ -1,0 +1,27 @@
+.main {
+  box-sizing: border-box;
+  padding: 24px 16px;
+  border-top: 1px solid #d9fff5;
+  background-color: #f8f8f8;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 24px 24px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .main {
+    padding: 42px 32px;
+  }
+}
+
+.main--block {
+  opacity: 10%;
+}
+@media (min-width: 1120px) {
+  .main {
+    grid-area: main;
+  }
+}

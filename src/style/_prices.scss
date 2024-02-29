@@ -1,0 +1,221 @@
+.prices {
+  width: 100%;
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+.prices__item {
+  list-style-type: none;
+
+  width: 260px;
+  height: 200px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  position: relative;
+
+  box-sizing: border-box;
+}
+
+.prices__text--gray {
+  font-family: "TT Lakes Medium";
+  color: #7e7e82;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0;
+  margin-bottom: 4px;
+}
+
+.prices__text--black {
+  font-family: "TT Lakes Regular";
+  color: #1b1c21;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  margin-bottom: 16px;
+}
+
+.prices__button {
+  width: 119px;
+  height: 32px;
+  background-color: #ff3e79;
+  padding: 0;
+  margin: 0;
+  border-radius: 16px;
+  text-align: start;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
+.prices__text--white {
+  color: #ffffff;
+  font-family: "TT Lakes Bold";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  margin-left: 12px;
+  position: relative;
+}
+
+.prices__text--white::after {
+  content: "";
+  width: 6.8px;
+  height: 6.8px;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 80px;
+  top: 3px;
+}
+
+.prices__notation {
+  display: block;
+  max-width: 421px;
+  font-family: "TT Lakes Regular";
+  color: #1b1c21;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.prices__offer {
+  display: block;
+  margin: 16px 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "TT Lakes Medium";
+  color: #1b1c21;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.prices__special-offer {
+  position: relative;
+}
+.prices__special-offer::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-bottom: 2px solid #ff3e79;
+  border-right: 2px solid #ff3e79;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 7px;
+  right: -15px;
+}
+
+@media (max-width: 767.98px) {
+  .prices__description {
+    display: none;
+  }
+  .prices__list {
+    margin: 16px 0;
+  }
+
+  .prices__item {
+    border: 1px solid #eaeaea;
+    padding: 16px;
+    margin-right: 16px;
+  }
+
+  .prices__container {
+    position: relative;
+    margin-right: -16px;
+    margin-bottom: 16px;
+  }
+
+  .prices__container::after {
+    content: linear-gradient(to right, transparent, white);
+    width: 24px;
+    height: 202px;
+    position: absolute;
+    top: 16px;
+    right: 0;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 768px) {
+  .prices__description {
+    display: grid;
+    grid-template-columns: 5fr 1.5fr 3fr;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: "TT Lakes Medium";
+    color: #7e7e82;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0;
+    margin: 31px 0 16px 0;
+    padding: 0 12px;
+  }
+
+  .prices__container {
+    margin-bottom: 24px;
+    padding: 0 16px;
+    background-color: #ffffff;
+    border-radius: 6px;
+  }
+
+  .prices__text--gray {
+    display: none;
+  }
+
+  .prices__text--black {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .prices__item {
+    display: grid;
+    grid-template-columns: 5fr 1.5fr 1.5fr 1.5fr;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    border-radius: 0;
+    padding: 16px 0;
+  }
+
+  .prices__item .buttons {
+    margin-left: auto;
+  }
+
+  .prices__item:not(:last-child) {
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .prices__button {
+    position: static;
+  }
+  .prices__offer {
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .prices__container {
+    padding: 0 24px;
+    margin-bottom: 32px;
+  }
+
+  .prices__offer {
+    margin-bottom: 8px;
+  }
+}
